@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Permainan Dadu Kasino</title>
+  </head>
+  <body>
+    <h1>Permainan Dadu Kasino</h1>
+    <h2>By Randy:)</h2>
+    <h4>Penjelasan</h4>
+    <h5>
+      1.Deposit terlebih dahulu tapi ini hanya permainan gabut saya deposit
+      tidak di ke akan biaya kok:)
+    </h5>
+    <h5>
+      2.Jika anda bisa menebak angka dadu maka anda mendapatkan 2x lipat jumlah
+      petaruhan dan jika anda kalah maka anda lose
+    </h5>
+    <hr />
+    <p>Pilih jumlah taruhan:</p>
+    <select id="betAmountSelect">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="5">5</option>
+      <option value="10">10</option>
+      <option value="30">30</option>
+      <option value="50">50</option>
+      <option value="80">80</option>
+      <option value="100">100</option>
+    </select>
+    <button id="rollDiceButton">Lempar Dadu</button>
+    <div id="loading" class="hidden">
+        <div class="spinner"></div>
+    </div>
+    <p>Hasil lempar dadu: <span id="diceResult">-</span></p>
+    <p>Total uang Anda: $<span id="totalMoney">0</span></p>
+    <p>Status: <span id="gameStatus"></span></p>
+    <script src="main.js"></script>
+  </body>
+</html>
